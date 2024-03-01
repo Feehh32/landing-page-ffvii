@@ -1,0 +1,36 @@
+.about-bg {
+  background: url(../assets/images/about-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  justify-content: flex-end;
+}
+
+.about {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.about-description {
+  margin-top: 120px;
+  padding: 30px;
+  display: inline-block;
+  background-color: rgba(28, 28, 48, 0.8);
+  box-shadow: 1px 2px 6px 0 rgba(0, 0, 0, 0.2),
+    2px 3px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.about .about-description h3 {
+  font-size: 2.25rem;
+  font-family: "Noto Sans Bengali", sans-serif;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 30px;
+}
+
+.about .about-description p {
+  font-size: 1.25rem;
+  max-width: 40ch;
+  font-family: "Noto Sans Bengali", sans-serif;
+  margin-bottom: 30px;
+}
