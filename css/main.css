@@ -1,0 +1,50 @@
+.main {
+  margin-top: 160px;
+}
+
+.main .main-detail {
+  display: block;
+  font-family: "Noto Sans Bengali", sans-serif;
+  font-size: 0.75rem;
+}
+
+.main .main-title {
+  font-family: "Noto Serif Khojki", serif;
+  font-weight: 600;
+  font-size: 3rem;
+  max-width: 21ch;
+  line-height: 1.2;
+  margin-bottom: 30px;
+}
+
+.main .main-title span {
+  color: #7ebbce;
+}
+
+.main .main-paragraph {
+  font-family: "Noto Sans Bengali", sans-serif;
+  font-weight: 400;
+  max-width: 48ch;
+  line-height: 1.4;
+}
+
+.main .main-link-btn {
+  margin-top: 30px;
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: "Noto Sans Bengali", sans-serif;
+  color: #ffff;
+  padding: 10px 20px;
+  border: none;
+  transition: 0.3s;
+  background: linear-gradient(to bottom, #295765, #7ebbce);
+}
+
+.main .main-link-btn ~ a {
+  margin-left: 30px;
+}
+
+.main .main-link-btn:hover {
+  background: radial-gradient(#7ebbce, #295765);
+}
