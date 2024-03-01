@@ -1,0 +1,64 @@
+.main-bg {
+  background: url("../assets/images/main-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.header {
+  max-width: 1260px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 60px;
+}
+
+.header .header-main-logo {
+  width: 120px;
+  height: 62.44px;
+}
+
+.header-menu {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.header-menu a {
+  display: inline-block;
+  color: #ffffff;
+  font-size: 1.25rem;
+  line-height: 1.4;
+  font-family: "Noto Sans Bengali", sans-serif;
+  transition: 0.3s;
+  padding: 16px 0;
+}
+
+.header-menu li svg {
+  transition: 0.3s;
+}
+
+.header-menu li a:hover {
+  color: #7ebbce;
+}
+
+.header-menu li svg:hover {
+  fill: #7ebbce;
+}
+
+.header-menu li:nth-child(4) {
+  margin-right: 32px;
+}
+
+@media (max-width: 760px) {
+  .header {
+    padding-top: 30px;
+  }
+  .header .header-main-logo {
+    width: 100px;
+    height: 42.44px;
+  }
+}
