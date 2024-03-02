@@ -1,0 +1,93 @@
+.screenshots-bg {
+  background: url(../assets/images/screenshot-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.screenshots {
+  padding-top: 60px;
+  position: relative;
+}
+
+.screenshots h2 {
+  font-family: "Noto Serif Khojki", serif;
+  font-weight: 600;
+  font-size: 3rem;
+  line-height: 2;
+  text-align: center;
+  text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.screenshots h2::after,
+.screenshots h2::before {
+  margin: 0 auto;
+  content: "";
+  display: block;
+  background: url("../assets/logos-and-icons/separator.png");
+  background-repeat: no-repeat;
+  background-size: 500px;
+  width: 500px;
+  height: 10px;
+}
+
+.screenshots h2::after {
+  margin-top: 5px;
+}
+.screenshots h2::before {
+  margin-bottom: -7px;
+}
+
+.screenshots-slide-wrapper {
+  margin-top: 60px;
+  overflow: hidden;
+}
+
+.screenshots-slide {
+  display: flex;
+}
+
+.screenshots-slide:hover {
+  will-change: transform;
+}
+
+.screenshots-slide li {
+  flex-shrink: 0;
+  width: 80vw;
+  max-width: 800px;
+  margin: 0 20px;
+
+  overflow: hidden;
+  box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.5), 1px 3px 6px rgba(0, 0, 0, 0.2);
+  transform: scale(0.8);
+  transition: 0.4s;
+}
+
+.slide li.active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.arrow-nav {
+  width: 90vw;
+  top: 62%;
+  position: absolute;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.arrow-nav .screenshots-prev {
+  cursor: pointer;
+  width: 60px;
+  height: 40px;
+  background: url("../assets/logos-and-icons/slide-button-right.svg") no-repeat
+    center;
+}
+.arrow-nav .screenshots-next {
+  cursor: pointer;
+  width: 60px;
+  height: 40px;
+  background: url("../assets/logos-and-icons/slide-button-left.svg") no-repeat
+    center;
+}
