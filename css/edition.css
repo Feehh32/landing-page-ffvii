@@ -1,0 +1,76 @@
+.edition-bg {
+  background: url("../assets/images/edition-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.edition {
+  padding-top: 60px;
+}
+
+.edition h2 {
+  margin-bottom: 120px;
+}
+
+.edition-item-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.edition-item-wrapper {
+  border: 1px solid #2f9cb6;
+  max-width: 400px;
+  display: grid;
+  grid-template-rows: 200px 1fr;
+}
+
+.twin-deluxe-img {
+  background: url("../assets/images/image-slide1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.standard-img {
+  background: url("../assets/images/image-edition.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.edition-item-img {
+  max-width: 100%;
+  min-height: 200px;
+  border-bottom: 1px solid #2f9cb6;
+}
+
+.edition-item-about {
+  padding: 30px;
+  display: grid;
+  grid-template-rows: auto auto minmax(auto, 250px) auto;
+  gap: 30px;
+}
+
+.edition-item-about h3 {
+  text-align: center;
+}
+
+.edition-item-logo {
+  padding: 30px 120px;
+  border: 1px solid #2f9cb6;
+}
+
+.edition-item-list li {
+  font-family: "Noto Sans Bengali", sans-serif;
+  line-height: 2;
+}
+
+.edition-item-btn {
+  text-align: center;
+  padding: 16px;
+  align-self: end;
+}
+
+.edition-item-btn:hover {
+  background: radial-gradient(#7ebbce, #295765);
+}
