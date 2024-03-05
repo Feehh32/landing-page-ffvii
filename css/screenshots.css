@@ -10,17 +10,8 @@
   position: relative;
 }
 
-.screenshots h2 {
-  font-family: "Noto Serif Khojki", serif;
-  font-weight: 600;
-  font-size: 3rem;
-  line-height: 2;
-  text-align: center;
-  text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-.screenshots h2::after,
-.screenshots h2::before {
+.styled-title::after,
+.styled-title::before {
   margin: 0 auto;
   content: "";
   display: block;

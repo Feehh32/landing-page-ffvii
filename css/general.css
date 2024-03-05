@@ -28,8 +28,27 @@ ul {
   list-style-type: none;
 }
 
+.styled-btn {
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: "Noto Sans Bengali", sans-serif;
+  color: #ffff;
+  border: none;
+  background: linear-gradient(to bottom, #295765, #7ebbce);
+}
+
+.styled-title {
+  font-family: "Noto Serif Khojki", serif;
+  font-weight: 600;
+  font-size: 3rem;
+  line-height: 2;
+  text-align: center;
+  text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
 @media (max-width: 760px) {
   .container {
-    margin-left: 30px;
+    margin: 0 30px;
   }
 }
