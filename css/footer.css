@@ -3,7 +3,8 @@
 }
 
 .footer {
-  padding: 30px 0;
+  padding-top: 60px;
+  padding-bottom: 30px;
   display: grid;
   grid-template-columns: auto 1fr;
   justify-content: center;
@@ -56,4 +57,28 @@
   color: #cacaca;
   font-family: "Noto Sans Bengali", sans-serif;
   font-size: 0.875rem;
+}
+
+@media (max-width: 760px) {
+  .footer {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .footer-logo {
+    justify-self: center;
+    margin-bottom: 16px;
+  }
+
+  .footer-contact {
+    margin: 0 auto;
+  }
+
+  .footer-icon-list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 16px;
+  }
 }

@@ -14,7 +14,7 @@
 .header-menu {
   display: flex;
   gap: 20px;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
 
 .header-menu a {
@@ -24,6 +24,15 @@
   line-height: 1.4;
   font-family: "Noto Sans Bengali", sans-serif;
   transition: 0.3s;
+  padding: 16px 0;
+}
+
+.header-icons-menu {
+  display: flex;
+  gap: 16px;
+}
+
+.header-icons-menu a {
   padding: 16px 0;
 }
 
@@ -39,16 +48,30 @@
   fill: #7ebbce;
 }
 
-.header-menu li:nth-child(4) {
-  margin-right: 32px;
-}
-
 @media (max-width: 760px) {
   .header {
     padding-top: 30px;
   }
+
   .header .header-main-logo {
     width: 100px;
     height: 42.44px;
+    order: 1;
+  }
+
+  .header-menu a {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 625px) {
+  .header nav {
+    order: 3;
+    margin-top: 16px;
+    overflow-x: scroll;
+  }
+
+  .header .header-icons-menu {
+    order: 2;
   }
 }
