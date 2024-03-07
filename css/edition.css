@@ -2,10 +2,12 @@
   background: url("../assets/images/edition-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center top;
 }
 
 .edition {
-  padding: 60px 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .edition h2 {
@@ -29,17 +31,18 @@
   background: url("../assets/images/image-slide1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center top;
 }
 
 .standard-img {
   background: url("../assets/images/image-edition.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center top;
 }
 
 .edition-item-img {
   max-width: 100%;
-  min-height: 200px;
   border-bottom: 1px solid #2f9cb6;
 }
 
@@ -52,6 +55,8 @@
 
 .edition-item-about h3 {
   text-align: center;
+  font-family: "Noto Sans Bengali", sans-serif;
+  font-size: 1.5rem;
 }
 
 .edition-item-logo {
@@ -72,4 +77,19 @@
 
 .edition-item-btn:hover {
   background: radial-gradient(#7ebbce, #295765);
+}
+
+@media (max-width: 760px) {
+  .edition-item-container {
+    justify-content: center;
+  }
+
+  .edition-item-about h3 {
+    font-size: 1.125rem;
+  }
+
+  .edition-item-list li {
+    font-size: 0.875rem;
+    grid-template-rows: 180px 1fr;
+  }
 }

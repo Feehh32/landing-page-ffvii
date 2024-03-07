@@ -4,12 +4,6 @@
   box-sizing: border-box;
 }
 
-.container {
-  max-width: 1260px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 body {
   color: #ffffff;
   font-family: Arial, Helvetica, sans-serif;
@@ -28,6 +22,15 @@ ul {
   list-style-type: none;
 }
 
+/* componentes gerais */
+
+.container {
+  max-width: 1260px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 .styled-btn {
   display: inline-block;
   text-transform: uppercase;
@@ -42,13 +45,32 @@ ul {
   font-family: "Noto Serif Khojki", serif;
   font-weight: 600;
   font-size: 3rem;
-  line-height: 2;
-  text-align: center;
+  line-height: 1.5;
   text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.styled-title::after,
+.styled-title::before {
+  content: "";
+  display: block;
+  background: url("../assets/logos-and-icons/separator.png");
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: center;
+  height: 15px;
+}
+
+.styled-title::after {
+  margin-top: 10px;
 }
 
 @media (max-width: 760px) {
-  .container {
-    margin: 0 30px;
+  .styled-title {
+    font-size: 1.5rem;
+  }
+  .styled-title::after,
+  .styled-title::before {
+    background-size: 250px;
   }
 }
