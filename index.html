@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Final Fantasy VII Rebirth</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -12,6 +11,8 @@
         rel="stylesheet">
     <meta name="description"
         content="Adquira já a continuação da épica aventura de Cloud, Tifa e todos os seus companheiros, em busca de Sephiroth para salvar o planeta e se livrar das correntes do destino.">
+    <link rel="icon" href="./assets/logos-and-icons/favicon.svg" type="image/svg+xml">
+    <title>Final Fantasy VII Rebirth</title>
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
@@ -22,8 +23,8 @@
                     class="header-main-logo" alt="Logo do jogo Final Fantasy VII Rebirth">
             </a>
             <nav aria-label="primaria">
-                <ul class="header-menu">
-                    <li><a href="./">Home</a></li>
+                <ul class="header-menu" data-links>
+                    <li><a href="#home">Home</a></li>
                     <li><a href="#about">Sobre</a></li>
                     <li><a href="#screenshots">Screenshots</a></li>
                     <li><a href="#edition">Edições</a></li>
@@ -106,11 +107,8 @@
                 </ul>
             </section>
             <div class="arrow-nav">
-                <span class="screenshots-prev">
-                    <!-- <img src="./assets/logos-and-icons/slide-button-left.svg" alt="icone de botões"> -->
-                </span>
-                <span class="screenshots-next">
-                    <!-- <img src="./assets/logos-and-icons/slide-button-right.svg" alt="icone de botões"> -->
+                <button type="button" class="screenshots-prev"></button>
+                <button type="button" class="screenshots-next"></button>
                 </span>
             </div>
         </section>
@@ -197,6 +195,7 @@
             <p> Desenvolvido por Fernando Pereira - 2024 </p>
         </footer>
     </div>
+    <script src="./main.js"></script>
 </body>
 
 </html>
