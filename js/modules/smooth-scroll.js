@@ -27,7 +27,6 @@ export default class SmoothScroll {
   init() {
     if (this.linksList.length) {
       this.linksList.pop();
-      console.log(this.linksList);
       this.addEventLink();
     }
     return this;
