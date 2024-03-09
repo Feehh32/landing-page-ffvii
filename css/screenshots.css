@@ -50,17 +50,18 @@
   justify-content: space-around;
 }
 
-.arrow-nav .screenshots-prev {
-  cursor: pointer;
-  width: 60px;
-  height: 40px;
-  background: url("../assets/logos-and-icons/slide-button-right.svg") no-repeat
-    center;
-}
+.arrow-nav .screenshots-prev,
 .arrow-nav .screenshots-next {
   cursor: pointer;
   width: 60px;
   height: 40px;
+  border: none;
+}
+.arrow-nav .screenshots-prev {
+  background: url("../assets/logos-and-icons/slide-button-right.svg") no-repeat
+    center;
+}
+.arrow-nav .screenshots-next {
   background: url("../assets/logos-and-icons/slide-button-left.svg") no-repeat
     center;
 }
