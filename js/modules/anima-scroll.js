@@ -1,9 +1,11 @@
+import debounce from "../helpers/debounce.js";
+
 export default class AnimaScroll {
   constructor(sections) {
     this.sections = document.querySelectorAll(sections);
     this.halfWindow = window.innerHeight * 0.6;
 
-    this.checkDistance = this.checkDistance.bind(this);
+    this.checkDistance = debounce(this.checkDistance.bind(this), 100);
   }
 
   // pega as distancias das sections em relação ao topo da página
@@ -20,6 +22,7 @@ export default class AnimaScroll {
   // Verifica a distancia da section em relação à posição do scroll
   // e adiciona a classe active para animar o scroll
   checkDistance() {
+    console.log("teste");
     this.distance.forEach((item) => {
       if (window.scrollY > item.offset) {
         item.element.classList.add("active");
