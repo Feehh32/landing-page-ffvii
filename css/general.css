@@ -33,7 +33,6 @@ ul {
 
 .btn-bg {
   display: inline-block;
-  margin-top: 30px;
   background: linear-gradient(to bottom, #043687, #084bb9);
 }
 
@@ -42,7 +41,7 @@ ul {
 }
 
 .styled-btn {
-  display: inline-block;
+  display: block;
   text-transform: uppercase;
   font-weight: 600;
   font-family: "Noto Sans Bengali", sans-serif;
