@@ -22,7 +22,6 @@ export default class AnimaScroll {
   // Verifica a distancia da section em relação à posição do scroll
   // e adiciona a classe active para animar o scroll
   checkDistance() {
-    console.log("teste");
     this.distance.forEach((item) => {
       if (window.scrollY > item.offset) {
         item.element.classList.add("active");
