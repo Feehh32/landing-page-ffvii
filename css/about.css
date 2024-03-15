@@ -3,13 +3,12 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
-  height: 100vh;
 }
 
 .about {
   display: flex;
-  height: 100vh;
   justify-content: end;
+  min-height: 100vh;
 }
 
 .about-description {

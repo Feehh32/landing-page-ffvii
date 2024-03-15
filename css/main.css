@@ -3,11 +3,11 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
-  height: 100vh;
 }
 
 .main {
   margin-top: 160px;
+  height: 100vh;
 }
 
 .main .main-detail {
