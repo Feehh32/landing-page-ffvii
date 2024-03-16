@@ -7,7 +7,8 @@
 
 .main {
   margin-top: 160px;
-  height: 100vh;
+  padding-bottom: 160px;
+  height: 70vh;
 }
 
 .main .main-detail {
@@ -45,6 +46,12 @@
 
 .main .main-link-btn:hover {
   transform: translate3d(4px, 3px, 0);
+}
+
+@media (max-width: 950px) {
+  .main {
+    height: 100vh;
+  }
 }
 
 @media (max-width: 760px) {
